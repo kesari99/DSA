@@ -13,7 +13,7 @@ class Solution {
             hash[val]++;
             maxFreq = Math.max(maxFreq, hash[val]);
             one_count = hash[1];
-            while((r -l + 1) - one_count > k){
+            if((r -l + 1) - one_count > k){
                 int val2 = nums[l];
                 hash[val2]--;
                 l++;
